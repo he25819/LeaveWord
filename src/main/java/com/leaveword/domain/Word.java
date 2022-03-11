@@ -18,9 +18,9 @@ public class Word {
     private int wordId;
     @Column(nullable = false, columnDefinition = "Int(11) COMMENT '用户外键'")
     private int userId;
-    @Column(nullable = false, columnDefinition = "varchar(100) COMMENT '留言标题' default '未命名'")
+    @Column(nullable = false, columnDefinition = "varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '留言标题' default '未命名'")
     private String title;
-    @Column(nullable = false, columnDefinition = "text COMMENT '留言内容'")
+    @Column(nullable = false, columnDefinition = "text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '留言内容'")
     private String content;
     @JSONField(format="yyyy-MM-dd HH:mm:ss")
     @Column(nullable = false, columnDefinition = "datetime COMMENT '留言时间'")

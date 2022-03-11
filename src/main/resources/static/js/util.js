@@ -1,4 +1,4 @@
-var address = window.location.origin + "/LeaveWord/";
+var address = window.location.origin + "/";
 
 function setCookie(name, value, days) {
     var d = new Date;
